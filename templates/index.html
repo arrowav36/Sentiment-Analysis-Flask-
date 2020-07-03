@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sentiment Analyser</title>
+
+	<style type="">
+		body {font-family: Arial, Helvetica, sans-serif;
+
+			  background-image: url('static/4.jpg');
+			  background-position: 5px 5px;
+			  background-size: 1355px 670px;
+			  background-repeat: no-repeat;
+		}
+
+	#button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 8px 10px;
+        border: none;
+        cursor: pointer;
+        width: 10%;
+      }
+    #button:hover {
+        opacity: 0.8;
+      }
+	  
+	 a{
+	 	color: black;
+	 } 
+	</style>
+
+</head>
+<body bgcolor="#FFFFFF">
+	<br>
+	<center>
+		<h1>Sentiment Alalyzer of the Amazon Reviews...</h1>
+
+	<form method="POST" action="{{ url_for('home')}}">
+  		<b>Type your text to predict here: <input type="text" name='review' placeholder="Your review here please!" required><br><br>
+
+
+      <input type="submit" id="button" value="Predict">
+
+      <h4>Enter the review you want to predict like, 'The Product was awesome', 'Poor Mic Quality', etc.</h4>
+
+      <br>
+  		<a href="/about">About the Project</a>
+
+	</form> 
+	</center>
+
+</body>
+</html>

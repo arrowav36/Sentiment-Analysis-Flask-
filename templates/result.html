@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Output</title>
+
+	<style>
+	  body {font-family: Arial, Helvetica, sans-serif;}
+
+	  h1{
+	  	color: #6BA558
+	  }
+	  h2{
+	  	color: #4285F4
+	  }
+
+
+	</style>
+
+
+</head>
+<body bgcolor="#FFFFFF">
+	<center>
+
+		<h1>Prediction...</h1>
+
+		{% if data==[1] %}
+
+		<h2>Positive Review</h2>
+		<br>
+
+		<img src="{{url_for('static', filename='review_positive.jpg')}}">
+
+		{% else %}
+		<br>
+
+		<h2>Negative review</h2>
+		<br>
+
+		<img src="{{url_for ('static', filename='review_negative.jpg')}}">
+		<br>
+
+		{% endif %}
+		<br>
+
+		<a href="/">Back to the main page</a>
+
+	</center>
+</body>
+</html>
